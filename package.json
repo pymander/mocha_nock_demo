@@ -1,18 +1,24 @@
 {
   "name": "mocha_nock_demo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A demonstration of using Nock and Mocha together.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha -R spec"
   },
-  "author": "Max Thayer <garbados@gmail.com>",
+  "authors": [
+    "Diane Thayer <garbados@gmail.com>",
+    "Erik L. Arneson <earneson@arnesonium.com>"
+  ],
   "license": "ISC",
+  "repository": "https://github.com/pymander/mocha_nock_demo",
   "devDependencies": {
     "async": "^0.9.0",
     "mocha": "^1.20.1",
     "nock": "^0.34.1",
-    "orchestrate": "^0.1.2",
     "underscore": "^1.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.15.3"
   }
 }
