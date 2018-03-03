@@ -1,8 +1,8 @@
 # Mocha Nock Demo
 
-A demonstration of using Nock and Mocha together, using [Orchestrate.io][]
+A demonstration of using Nock and Mocha together, using [Geonames.org][]
+[Geonames.org]: http://www.geonames.org/
 
-[Orchestrate.io]: http://orchestrate.io/
 
 ## Install
 
@@ -11,12 +11,12 @@ You'll need [git][] and [node.js][] to install the demo.
 [git]: http://git-scm.com/
 [node.js]: http://nodejs.org/
 
-    git clone git@github.com:garbados/mocha_nock_demo.git
-    cd mocha_nock_demo
+    git clone git@github.com:pymander/mocha_nock_demo.git
+    cd $_
     npm install
-    export ORCHESTRATE_API_KEY=YOUR_API_KEY
+    export GEONAMES_USER=your.geonames.username
 
-Remember to replace `YOUR_API_KEY` with your actual Orchestrate API key.
+Remember to replace `your.geonames.username` with your actual Geonames username.
 
 ## Usage
 
@@ -29,7 +29,7 @@ Remember to replace `YOUR_API_KEY` with your actual Orchestrate API key.
     NOCK_RECORD=1 npm test
     # re-record your HTTP calls
 
-All the magic is in [test/record.js](https://github.com/garbados/mocha_nock_demo/blob/master/test/record.js),
+All the magic is in [test/record.js](https://github.com/pymander/mocha_nock_demo/blob/master/test/record.js),
 so check it out to see how it works,
 or use it in your own mocha tests, like this:
 
